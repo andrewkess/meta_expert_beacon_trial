@@ -98,21 +98,21 @@ async def start():
     # agent_kwargs = {
     #     "model": "gpt-4o",
     #     "server": "openai",
-    #     "temperature": 0.2
+    #     "temperature": 0.1
     # }
 
     # Claude 
     agent_kwargs = {
         "model": "claude-3-5-sonnet-20240620",
         "server": "claude",
-        "temperature": 0
+        "temperature": 0.1
     }
 
         # Ollama
     # agent_kwargs = {
     #     "model": "phi3:instruct",
     #     "server": "ollama",
-    #     "temperature": 0.5
+    #     "temperature": 0.1
     # }
 
     # Groq
@@ -126,15 +126,15 @@ async def start():
     # agent_kwargs = {
     #     "model": "gemini-1.5-pro",
     #     "server": "gemini",
-    #     "temperature": 0.5
+    #     "temperature": 0.1
     # }
 
     # Vllm
     # agent_kwargs = {
     #     "model": "hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4",
     #     "server": "vllm",
-    #     "temperature": 0,
-    #     "model_endpoint": "https://qe0ku2nxiseerx-8000.proxy.runpod.net/",
+    #     "temperature": 0.1,
+    #     "model_endpoint": "https://b1xkdmrlxy9q8s-8000.proxy.runpod.net/",
     # }
 
 

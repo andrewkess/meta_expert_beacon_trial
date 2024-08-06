@@ -1,9 +1,10 @@
 guided_json_search_query = {
   "type": "object",
   "properties": {
-    "search_query": {
-      "type": "string",
-      "description": "The refined Google search engine query that aligns with the response from your managers."
+    "search_queries": {
+      "type": "array",
+      "items":{"type": "string"},
+      "description": "List of generated search queries"
     }
   },
   "required": ["search_query"]
@@ -24,6 +25,17 @@ guided_json_best_url = {
   "required": ["best_url", "pdf"]
 }
 
+
+guided_json_best_url_two = {
+  "type": "object",
+  "properties": {
+    "best_url": {
+      "type": "string",
+      "description": "The URL of the Serper results that aligns most with the instructions from your manager."
+    },
+  },
+  "required": ["best_url"]
+}
 
 
 guided_json_router_decision = {
